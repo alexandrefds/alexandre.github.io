@@ -8,7 +8,7 @@ body {
 }
 
 .custom-card {
-  background-color: #317c82;
+  background-color: #2e3440;
   color: #ffffff;
   border-radius: 15px;
   padding: 20px;
@@ -21,4 +21,14 @@ body {
 
 .custom-card a:hover {
   text-decoration: underline;
+}
+
+.btn-success {
+  background-color: #1c5d63;
+
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #144445;
 }
