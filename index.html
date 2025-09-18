@@ -9,72 +9,120 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Portfólio</a>
+      <a class="navbar-brand" href="#">Alexandre Ferreira da Silva</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <!-- WhatsApp -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://wa.me/53981464868" target="_blank">
+              <i class="bi bi-whatsapp" style="font-size: 1.5rem; color: #25D366;"></i>
+              <span class="d-lg-none ms-2">WhatsApp</span>
+            </a>
+          </li>
+          <!-- GitHub -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/alexandrefds" target="_blank">
+              <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+              <span class="d-lg-none ms-2">GitHub</span>
+            </a>
+          </li>
+          <!-- Linkedin -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/alexandrefds/" target="_blank">
+              <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+              <span class="d-lg-none ms-2">LinkedIn</span>
+            </a>
+          </li>
+          <!-- Discord -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/seulink" target="_blank">
+              <i class="bi bi-discord" style="font-size: 1.5rem;"></i>
+              <span class="d-lg-none ms-2">Discord</span>
+            </a>
+          </li>
+          <!-- Instagram -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/alexandrefds_/" target="_blank">
+              <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+              <span class="d-lg-none ms-2">Instagram</span>
+            </a>
+          </li>
+          <!-- Facebook -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/alexandreferreira211293" target="_blank">
+              <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+              <span class="d-lg-none ms-2">Facebook</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Olá, eu sou [Seu Nome]</h1>
-      <p class="lead">Desenvolvedor Web | Frontend | Backend</p>
-      <a href="#projetos" class="btn btn-light btn-lg mt-3">Ver Projetos</a>
-    </div>
-  </header>
-
   <!-- Sobre -->
   <section id="sobre" class="py-5">
     <div class="container">
-      <h2 class="mb-4 text-center">Sobre Mim</h2>
-      <div class="row align-items-center">
-        <!-- Imagem à esquerda -->
-        <div class="col-md-4 text-center">
-          <img src="images/iMe.png" alt="Minha Foto" class="img-fluid rounded-circle shadow">
-        </div>
-        <!-- Texto à direita -->
-        <div class="col-md-8">
-          <p>
-            Sou apaixonado por tecnologia e desenvolvimento de software. Tenho experiência em
-            <strong>HTML, CSS, JavaScript</strong> e frameworks modernos.
-            Estou sempre buscando aprender e criar projetos inovadores.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="card shadow-lg border-0 mx-auto col-md-8 custom-card">
+        <div class="card-body">
+          <div class="row align-items-center">
 
-  <!-- Projetos -->
-  <section id="projetos" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center">Projetos</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h5 class="card-title">Projeto 1</h5>
-              <p class="card-text">Descrição breve do projeto.</p>
-              <a href="https://github.com/seuusuario/projeto1" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+            <!-- Imagem à esquerda dentro do card -->
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+              <img src="images/iMe.png" alt="Minha Foto" class="img-fluid rounded-circle shadow">
+            </div>
+
+            <!-- Texto à direita -->
+            <div class="col-md-8">
+              <h3 class="card-title">Olá, muito prazer!</h3>
+              <p class="card-text">
+                Sou <strong>Alexandre Ferreira da Silva</strong>, apaixonado por tecnologia e desenvolvimento de
+                software e Linux.
+                Tenho experiência em desenvolvimento <strong>PHP, JavaScript, MySQL, MongoDB</strong> e frameworks como
+                Laravel e AdonisJS.
+                Estou sempre buscando aprender, colaborar e criar projetos inovadores.
+              </p>
+            </div>
+
+            <div class="card-body text-center">
+              <h3 class="card-title mb-4">Contato</h3>
+              <p class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                <a href="mailto:ale.ferreira.rs@gmail.com" class="text-white text-decoration-none">
+                  ale.ferreira.rs@gmail.com
+                </a>
+              </p>
+              <p>
+                <i class="bi bi-telephone-fill me-2"></i>
+                <a href="tel:+5553981464868" class="text-white text-decoration-none">
+                  +55 53 98146-4868
+                </a>
+              </p>
+              <a href="mailto:ale.ferreira.rs@gmail.com" class="btn btn-primary mt-3">Enviar E-mail</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div cl
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle com Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
